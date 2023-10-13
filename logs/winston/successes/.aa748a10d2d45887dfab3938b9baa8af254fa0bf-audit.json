@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/riyad/Documents/Programming Hero/Web Dev 2.0/Final Assignment/Backend/logs/winston/successes/.aa748a10d2d45887dfab3938b9baa8af254fa0bf-audit.json",
+    "files": [
+        {
+            "date": 1697083795412,
+            "name": "/home/riyad/Documents/Programming Hero/Web Dev 2.0/Final Assignment/Backend/logs/winston/successes/phu-2023-12-10-10-success.log",
+            "hash": "344ba3d42973090e668b60d8c8e32f7e6d6b53edf0eb241068bb350baac70011"
+        }
+    ],
+    "hashType": "sha256"
+}
