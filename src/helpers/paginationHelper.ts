@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import { SortOrder } from 'mongoose';
+
 type IOptions = {
   page?: number;
   limit?: number;
@@ -10,7 +13,7 @@ type IOptionsResult = {
   limit: number;
   skip: number;
   sortBy: string;
-  sortOrder: string;
+  sortOrder: SortOrder;
 };
 
 const calculatePagination = (options: IOptions): IOptionsResult => {
@@ -19,7 +22,8 @@ const calculatePagination = (options: IOptions): IOptionsResult => {
   const skip = (page - 1) * limit;
 
   const sortBy = options.sortBy || 'createdAt';
-  const sortOrder = options.sortOrder || 'desc';
+  //@ts-ignore
+  const sortOrder: SortOrder = options.sortOrder || 'desc';
 
   return {
     page,
