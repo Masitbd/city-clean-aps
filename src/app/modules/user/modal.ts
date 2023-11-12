@@ -10,7 +10,11 @@ const userSchema = new Schema<IUser>(
     contactNo: { type: String, required: true },
     age: { type: Number, required: true },
     address: { type: String, required: true },
-    role: { type: String, default: ENUM_USER_ROLE.CUSTOMER },
+    role: {
+      type: String,
+      // enum: Object.keys(ENUM_USER_ROLE),
+      default: ENUM_USER_ROLE.CUSTOMER,
+    },
   },
   { timestamps: true }
 );
