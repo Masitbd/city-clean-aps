@@ -3,6 +3,7 @@ import { AuthRoutes } from '../modules/auth/routes';
 import { BookingRoutes } from '../modules/booking/routes';
 import { CategoryRoutes } from '../modules/category/routes';
 import { CleaningServiceRoutes } from '../modules/cleaningService/routes';
+import { ProfileRoutes } from '../modules/profile/routes';
 import { ReviewRoutes } from '../modules/review/routes';
 import { UserRoutes } from '../modules/user/routes';
 
@@ -32,6 +33,10 @@ const moduleRoutes = [
   {
     path: '/reviews',
     routes: ReviewRoutes,
+  },
+  {
+    path: '/profile',
+    routes: ProfileRoutes,
   },
 ];
 
