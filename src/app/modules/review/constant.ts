@@ -1,3 +1,3 @@
-export const reviewSearchAndFilter = ['searchTerm', 'title'];
+export const reviewSearchAndFilter = ['searchTerm', 'service'];
 
-export const reviewSearchableFields = ['title'];
+export const reviewSearchableFields = ['service'];

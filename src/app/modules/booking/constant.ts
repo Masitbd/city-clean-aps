@@ -1,3 +1,3 @@
-export const bookingSearchAndFilter = ['searchTerm', 'orderBy'];
+export const bookingSearchAndFilter = ['searchTerm', 'orderBy', 'status'];
 
-export const bookingSearchableFields = ['orderBy'];
+export const bookingSearchableFields = ['orderBy', 'status'];

@@ -5,7 +5,7 @@ const cleaningServiceSchema = new Schema<ICleaningService>(
   {
     title: { type: String, required: true },
     price: { type: Number, required: true },
-    status: { type: String, default: ENUM_CLEANING_SERVICE_STATUS.UNAVAILABLE },
+    status: { type: String, default: ENUM_CLEANING_SERVICE_STATUS.AVAILABLE },
     description: { type: String, required: true },
     category: { type: Types.ObjectId, ref: 'Category' },
   },

@@ -22,7 +22,7 @@ const signIn: RequestHandler = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Signed In successfully',
+    message: 'Signed up successfully',
     data: result,
   });
 });

@@ -9,6 +9,7 @@ const createCleaningService = async (payload: ICleaningService) => {
   const cleaningService = await CleaningService.create(payload);
   return cleaningService;
 };
+
 const getCleaningServices = async (
   paginationOptions: IPaginationOptions,
   filtersOptions: ICleaningServiceSearch
@@ -46,6 +47,7 @@ const getCleaningServices = async (
     : {};
 
   const cleaningServices = await CleaningService.find(whereCondition)
+    .populate('category')
     .sort(sortCondition)
     .skip(skip)
     .limit(limit);
@@ -58,7 +60,9 @@ const getCleaningServices = async (
 };
 
 const getCleaningService = async (id: string) => {
-  const cleaningService = await CleaningService.findById(id);
+  const cleaningService = await CleaningService.findById(id).populate(
+    'category'
+  );
   return cleaningService;
 };
 
