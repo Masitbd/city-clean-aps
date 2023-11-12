@@ -3,6 +3,11 @@ export const cleaningServiceSearchAndFilter = [
   'title',
   'category',
   'status',
+  'service',
 ];
 
-export const cleaningServiceSearchableFields = ['title', 'category', 'status'];
+export const cleaningServiceSearchableFields = [
+  'title',
+  //'category',
+  'status',
+];

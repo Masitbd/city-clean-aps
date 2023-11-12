@@ -4,6 +4,7 @@ import { BookingRoutes } from '../modules/booking/routes';
 import { CartRoutes } from '../modules/cart.ts/routes';
 import { CategoryRoutes } from '../modules/category/routes';
 import { CleaningServiceRoutes } from '../modules/cleaningService/routes';
+import { ContentManagementRoutes } from '../modules/contentManagement/routes';
 import { FeedbackRoutes } from '../modules/feedback/routes';
 import { ProfileRoutes } from '../modules/profile/routes';
 import { ReviewRoutes } from '../modules/review/routes';
@@ -47,6 +48,10 @@ const moduleRoutes = [
   {
     path: '/carts',
     routes: CartRoutes,
+  },
+  {
+    path: '/content-management',
+    routes: ContentManagementRoutes,
   },
 ];
 

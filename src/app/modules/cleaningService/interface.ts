@@ -4,6 +4,7 @@ import { Schema } from 'mongoose';
 export enum ENUM_CLEANING_SERVICE_STATUS {
   AVAILABLE = 'available',
   UNAVAILABLE = 'unavailable',
+  UPCOMING = 'upcoming',
 }
 
 export type ICleaningService = {
