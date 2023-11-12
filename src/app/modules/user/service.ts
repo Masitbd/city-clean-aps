@@ -3,10 +3,11 @@ import { ENUM_USER_ROLE } from '../../../enums/user';
 import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import { IUser } from '../auth/interface';
-import { User } from '../auth/modal';
+
 import { AuthUtils } from '../auth/utils';
 import { userSearchableFields } from './constant';
 import { IUserSearch } from './interface';
+import { User } from './modal';
 
 const createAdmin = async (payload: IUser) => {
   // Hash password

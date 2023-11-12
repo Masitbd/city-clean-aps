@@ -1,4 +1,4 @@
-import { IUser } from '../user/interface';
+import { IUser } from '../auth/interface';
 import { User } from '../user/modal';
 
 const getProfile = async (id: string) => {
